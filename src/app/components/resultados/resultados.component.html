@@ -1,0 +1,131 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="../../assets/img/taco.png"></a>
+          
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+   
+      <li class="nav-item active">
+        <a class="nav-link disabled" href="#">Cerca de mí<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/registrar']">Compartir Lugar</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" >Mis amigos</a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/profile']">Mi Perfil</a>
+      </li>    
+        
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar Lugar" aria-label="Buscar Lugar">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" [routerLink]="['/resultados']" style="background-color: orange">Buscar</button>
+    </form>
+  </div>
+</nav>
+    
+		
+			<div id="primary" class="container">
+				<div class="row content-area">
+						<div class="job_listings">
+							<form class="job_filters">
+								<div class="search_jobs">
+									<div class="search_keywords">
+										<label for="search_keywords">Tacos</label>
+										<input type="text" name="search_keywords" id="search_keywords" placeholder="Tacos" value="" />
+									</div>
+									<div class="search_location">
+										<label for="search_location">Ubicación</label>
+										<input type="text" name="search_location" id="search_location" placeholder="Narvarte" value="" />
+									</div>
+								</div>
+								<button type="submit" name="update_results" class="update_results">Buscar</button>
+							</form>
+                            <h3 class="archive-job_listing-found">
+								<span class="results-found">2</span> Resultados </h3>
+                            
+                            <div id="content" class="site-content">
+			<div class="job_listings-map-wrapper listings-map-wrapper--side">
+				<div class="job_listings-map">
+					<div id="job_listings-map-canvas"><div class="mapouter"><div class="gmap_canvas"><iframe width="1400" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=doctor%20vertiz&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" ></iframe></div><style>.mapouter{margin: 0 auto;text-align:center;height:400px;}.gmap_canvas {overflow:hidden;background:none!important; width: 100%;}</style>
+                        <br>
+                        </div></div>
+				</div>
+			</div>
+                                
+							
+						</div>
+						<ul class="job_listings" style="margin-top: 2em">
+							<li itemscope id="job_listing-87" data-grid-columns="col-xs-12 col-sm-6" data-rating="0 Stars" class="col-xs-12 col-sm-6 style-grid post-87 job_listing type-job_listing status-publish hentry card-style--default">
+								<div class="content-box" >
+									<a [routerLink]="['/restaurante']" class="job_listing-clickbox" ></a>
+                                    
+									<header class="job_listing-entry-header listing-cover" id="listing-cover1" style="background-image: url(../../../assets/img/tacos1.jpg); width: 100%;">
+										<div class="job_listing-entry-header-wrapper cover-wrapper">
+											<div class="job_listing-entry-thumbnail" >
+
+											</div>
+											
+										</div>
+									</header>
+									<footer class="job_listing-entry-footer">
+                                        <div class="job_listing-entry-meta">
+												<h2 itemprop="name" class="job_listing-title">Tacos Susanita</h2>
+												<div class="job_listing-location job_listing-location-formatted">
+												<br><span itemprop="streetAddress">Doctor Vertiz, Col. Narvarte, CDMX </span><br />
+													<span>(416) 531-5042</span>
+												</div>
+											</div>
+										<div class="rating-0 job_listing-rating-wrapper">
+											<span class="job_listing-rating-stars">
+												<span class="star-icon"><span class="ion-android-star"></span></span><span class="star-icon"><span class="ion-android-star"></span></span><span class="star-icon"><span class="ion-android-star"></span></span><span class="star-icon"><span
+														class="ion-android-star-half"></span></span>
+												<span class="star-icon"><span class="ion-android-star-outline"></span></span>
+											</span>
+										</div>
+									</footer>
+								</div>
+							</li>
+
+							<li itemscope id="job_listing-88" data-grid-columns="col-xs-12 col-sm-6" data-rating="0 Stars" class="col-xs-12 col-sm-6 style-grid post-87 job_listing type-job_listing status-publish hentry card-style--default">
+								<div class="content-box" >
+									<a [routerLink]="['/restaurante']" class="job_listing-clickbox" ></a>
+                                    
+									<header class="job_listing-entry-header listing-cover" id="listing-cover1" style="background-image: url(../../../assets/img/tacos2.jpeg)">
+										<div class="job_listing-entry-header-wrapper cover-wrapper">
+											<div class="job_listing-entry-thumbnail" >
+
+											</div>
+											
+										</div>
+									</header>
+									<footer class="job_listing-entry-footer">
+                                        <div class="job_listing-entry-meta">
+												<h2 itemprop="name" class="job_listing-title">Los Diablitos II</h2>
+												<div class="job_listing-location job_listing-location-formatted">
+												<br><span itemprop="streetAddress">Doctor Vertiz, Col. Narvarte, CDMX </span><br />
+													<span>(416) 531-4532</span>
+												</div>
+											</div>
+										<div class="rating-0 job_listing-rating-wrapper">
+											<span class="job_listing-rating-stars">
+												<span class="star-icon"><span class="ion-android-star"></span></span><span class="star-icon"><span class="ion-android-star"></span></span><span class="star-icon"><span class="ion-android-star"></span></span><span class="star-icon"><span
+														class="ion-android-star-half"></span></span>
+												<span class="star-icon"><span class="ion-android-star-outline"></span></span>
+											</span>
+										</div>
+									</footer>
+								</div>
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>

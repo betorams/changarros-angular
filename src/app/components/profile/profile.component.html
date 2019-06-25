@@ -1,0 +1,81 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="../../assets/img/taco.png"></a>
+          
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        </li>
+        
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/resultados']">Cerca de mí</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/registrar']">Compartir Lugar</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Mis amigos</a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link disabled" >Mi Perfil<span class="sr-only">(current)</span></a>
+      </li>    
+        
+    </ul>
+    <form class="form-inline my-2 my-lg-0" >
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar Lugar" aria-label="Buscar Lugar">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: orange" [routerLink]="['/resultados']">Buscar</button>
+    </form>
+  </div>
+</nav>
+        
+        
+        
+        
+		<div id="content" class="site-content">
+			<div class="page-cover">
+				<div class="author-title page-title cover-wrapper">
+					<div class="author-name">
+						<img src="../../assets/img/profile.jpg" width="150" height="150" class="avatar avatar-150"/>
+						<h1>Santiago Pérez</h1>
+					</div>
+					<p class="author-meta">
+						<i class="fa fa-cloud-upload" aria-hidden="true"></i>
+						<span class="listing-count">1 Lugar Compartido</span> </p>
+				</div>
+			</div>
+			<div id="primary" class="container">
+				<div class="row content-area">
+					<main id="main" class="site-main col-md-8 col-sm-7 col-xs-12">
+						<aside class="widget widget--author widget--author-main listify_widget_author_listings">
+							<h3 class="widget-title widget-title--author widget--author-sidebar %s">Santiago, lugares compartidos (1)</h3>
+							<ul class="job_listings">
+
+								<!-- Anuncio -->
+								<li itemscope id="job_listing-87" data-grid-columns="col-xs-12 col-sm-6" data-rating="0 Stars" class="col-xs-12 col-sm-6 style-grid post-87 job_listing type-job_listing status-publish hentry card-style--default">
+									<div class="content-box">
+										<a [routerLink]="['/restaurante']"class="job_listing-clickbox"></a>
+                                        <img src="../../assets/img/tacos1.jpg" alt="tacos">
+										<header class="job_listing-entry-header listing-cover">
+											<div class="job_listing-entry-header-wrapper cover-wrapper">
+												<div class="job_listing-entry-thumbnail">
+                                                    
+												</div>
+												<div class="job_listing-entry-meta">
+													<h2 itemprop="name" class="job_listing-title">Tacos Susanita</h2>
+													<div class="job_listing-location job_listing-location-formatted">
+													<br><span itemprop="streetAddress">Doctor Vertiz, Narvarte, CDMX</span><br />
+														<span>(416) 531-5042</span>
+													</div>
+												</div>
+											</div>
+										</header>
+										<footer class="job_listing-entry-footer">
+											<div class="rating-0 job_listing-rating-wrapper">
+												<span class="job_listing-rating-stars">
+													<span class="star-icon"><span class="ion-android-star"></span></span><span class="star-icon"><span class="ion-android-star"></span></span><span class="star-icon"><span class="ion-android-star"></span></span><span class="star-icon"><span
+														  class="ion-android-star-half"></span></span>

@@ -1,0 +1,63 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="../../assets/img/taco.png"></a>
+          
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        </li>
+        
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/resultados']">Cerca de mí</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/registrar']">Compartir Lugar</a>
+      </li>
+    
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Mis amigos</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/profile']">Mi perfil</a>
+      </li>    
+        
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar Lugar" aria-label="Buscar Lugar">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: orange" [routerLink]="['/resultados']">Buscar</button>
+    </form>
+  </div>
+</nav>
+    
+  <div style="background-image: url(../../assets/img/tacos3.jpg);" class="homepage-cover page-cover entry-cover entry-cover--home entry-cover--default has-image">
+    <div class="cover-wrapper container">
+      <div class="changarros_widget_search_listings">
+        <div class="home-widget-section-title">
+          <h1 class="home-widget-title">Changarros</h1>
+            <h2 class="home-widget-description">¿Dónde quieres comer hoy?</h2>
+        </div>
+        <form class="job_search_form">
+          <div class="search_jobs">
+            <div class="search_keywords">
+              <label for="search_keywords">¿Qué buscas?</label>
+              <input type="text" name="search_keywords" id="search_keywords" placeholder="¿Qué buscas?" />
+            </div>
+            <div class="search_location">
+              <label for="search_location">Ubicación</label>
+              <input type="text" name="search_location" id="search_location" placeholder="Ubicación" />
+            </div>
+          </div>
+          <div class="showing_jobs"></div>
+        </form>
+        <div style="text-align:center; margin-top:15px;">
+              <button [routerLink]="['/resultados']" style="background-color: orange">Buscar</button>
+        </div>
+      </div>
+    </div>
+  </div>

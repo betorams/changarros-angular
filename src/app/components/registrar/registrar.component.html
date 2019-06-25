@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="../../assets/img/taco.png"></a>
+          
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        </li>
+        
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/resultados']">Cerca de mí</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link disabled" href="#">Compartir Lugar</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Mis amigos</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/profile']">Mi perfil</a>
+      </li>    
+        
+    </ul>
+<form class="form-inline my-2 my-lg-0" >
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar Lugar" aria-label="Buscar Lugar">
+      <button class="btn my-2 my-sm-0" type="submit" [routerLink]="['/resultados']" style="background-color: orange">Buscar</button>
+    </form>
+  </div>
+</nav>
+    
+
+    <div class="container-fluid">
+      <div class="row no-gutter">
+        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image" style="background-image: url(../../../assets/img/tacos3.jpg); background-repeat:no-repeat;  "></div>
+        <div class="col-md-8 col-lg-6">
+          <div class="login d-flex align-items-center py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9 col-lg-8 mx-auto">
+                  <h3 class="login-heading mb-4">¡Registra un lugar!</h3>
+                  <form action="#" method="post">
+                      
+                    <div class="form-label-group">
+                        <label for="inputName">Nombre del Lugar</label>
+                      <input type="text" id="inputName" name ="name" class="form-control" placeholder="Eg: Tacos Susanita" required autofocus><br>
+                      
+                    </div>
+                      
+                    <div class="form-label-group">
+                        <label for="inputLastName">Calle y colonia</label>
+                      <input type="text" id="inputLastName" name="lastName" class="form-control" placeholder="Eg: Doctor Vertiz, Narvarte" required><br>
+                      
+                    </div>
+                      
+                      <div class="form-label-group">
+                          <label for="inputLastName">Tipo de Comida</label>
+                   <input type="text" id="tipoComida" name="tipoComida" class="form-control" placeholder="Eg: Tacos" required><br>
+                      
+                          
+                    </div>
+                      
+                      <button class="btn btn-lg btn-primary btn-block btn-login font-weight-bold mb-2" type="" style="background-color: cornflowerblue">Compartir Ubicación</button><br>
+                      
+                      <button class="btn btn-lg btn-primary btn-block btn-login font-weight-bold mb-2" type="" style="background-color: cornflowerblue">Compartir Foto</button><br>
+                      
+                      
+                    
+                      
+                    
+                    <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"  type="submit">Subir Lugar</button>
+                      
+                      
+                  </form>
+                    <br>
+                    <p style="font-size: 10px; text-align: justify">Al utilizar este formato de usted está acordando con nuestros términos y condiciones que pueden ser encontrados <a href="">aquí</a></p>
+                    <p style="font-size: 10px; text-align: justify">Nuestro aviso de privacidad puede ser encontrado <a href="">aquí</a></p>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

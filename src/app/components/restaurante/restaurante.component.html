@@ -1,0 +1,153 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="../../assets/img/taco.png"></a>
+          
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+         <a class="logo" img></a>
+        </li>
+        
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/resultados']">Cerca de mí</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/registrar']">Compartir Lugar</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Mis amigos</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/profile']">Mi perfil</a>
+      </li>    
+        
+    </ul>
+<form class="form-inline my-2 my-lg-0" >
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar Lugar" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" [routerLink]="['/resultados']" style="background-color: orange">Buscar</button>
+    </form>
+  </div>
+</nav>
+    
+<h1>Tacos Susanita</h1>
+<p class="p1">
+Dr Vertiz 444, Col. Narvarte, CDMX <br>
+10 am - 10 pm Lunes a viernes <br>
+(416) 531-5042
+ <br>
+    </p>
+<br>
+   <h2>¿Los Recomiendas?</h2>
+<br>
+    <form class="vote-wrapper">
+				<button type="submit" name="update_results" class="votarIzq" >Sí</button>
+        <button type="submit" name="update_results" class="votarDer"  >No</button>
+    </form>
+
+<br><br>
+<h4>Recomendado</h4>
+<p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></p>
+<div class="containermagic">
+  <div class="cal f1">90%</div>
+</div>
+
+
+<!---
+<p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i></p>
+<div class="containermagic">
+  <div class="cal f2">80%</div>
+</div>
+
+<p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></p>
+<div class="containermagic">
+  <div class="cal f3">65%</div>
+</div>
+
+<p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></p>
+<div class="containermagic">
+  <div class="cal f4">60%</div>
+</div>
+<p><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></p>
+<div class="containermagic">
+  <div class="cal f5">20%</div>
+</div>
+<br>
+--->
+<br>
+<h4>Menú</h4>
+<br>
+<table style="width:70%">
+	<tr>
+  	<th>Recomendado</th>
+      <th>Platillo</th> 
+      <th>Precio</th>
+  	</tr>
+  <tr>
+    <td>
+      <div class="containermagic">
+        <div class="cal f1">90%</div>
+     </div>
+    </td>
+  	<td>Orden de Pastor</td>
+  	<td>$20</td>
+	</tr>
+	<tr class="trwhite">
+  	<td>
+        <div class="containermagic">
+        <div class="cal f2">80%</div>
+      </div>
+    </td>
+  	<td>Gringa de Pastor</td>
+  	<td>$50</td>
+  	</tr>
+	<tr>
+    <td>
+      <div class="containermagic">
+        <div class="cal f3">65%</div>
+      </div>
+    </td>
+  	<td>Orden de Bisteck</td>
+  	<td>$30</td>
+	</tr>
+</table>
+<br>
+
+
+<!---
+<div class="comment">
+<textarea id="title" type="text "rows="2" cols="4" onkeyup="Allow()" placeholder="Escribe un comentario" style="width:500px" style="height:150px"></textarea>
+    <input type="submit" value="Post" onclick="insert()" style="width:60px;" />
+</div>
+<div id="display"></div>
+<script type="text/javascript">
+var titles = [];
+var titleInput = document.getElementById("title");
+var messageBox = document.getElementById("display");
+function Allow()
+{
+if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="")
+{
+user.title.value="";
+alert("Please Enter only alphabets");
+}
+window.location.reload()
+}
+function insert () {
+titles.push(titleInput.value);
+clearAndShow();
+}
+function clearAndShow ()
+{
+titleInput.value = "";
+messageBox.innerHTML = "";
+messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
+}
+</script>
+
+--->
